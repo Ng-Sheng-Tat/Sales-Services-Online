@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Multiple Item Purchase</title>
+  <link rel="icon" href="shakehand.ico">
+  <style>
+    .container{
+    text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h3 style="text-align:center;">5 Items Per Pax Price: RM19.00</h3><br>
+    <p style="text-align:center;">Please Enter your number to the following: <input type="number" id="number" name="number"></p>
+    <br><br>
+    <button onclick="receipt()" style="text-align:center;">Submit</button><br>
+    <p id="popmeout" style="text-align:center;font-size:200%"></p>
+  </div>
+
+  <script>
+  function receipt() {
+    var txt;
+    txt = "Your order is set, products will be arrive in three days.";
+    document.getElementById("popmeout").innerHTML = txt;
+  }
+  </script>
+</body>
+</html>
